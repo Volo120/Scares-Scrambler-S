@@ -415,7 +415,8 @@ def add_corrupt_engine(cV, blockSpace, baseFile, corruptedFile, xEndValue):
         currentByte[x] += cV[0][2] #cV[0][2] = addValue
         if currentByte[x] > 255 or currentByte[x] < 0: #If it's bigger than a byte OR if it's a negative
             currentByte[x] = currentByte[x] % 256
-        corruptedFile.write(currentByte[x].to_bytes(1, byteorder="big"))
+            
+        corruptedFile.write(int(currentByte[x]).to_bytes(1, byteorder="big"))
 
     copy_file_contents(baseFile, corruptedFile, blockSpace) #The gap in between - Shoutout to Jason
     

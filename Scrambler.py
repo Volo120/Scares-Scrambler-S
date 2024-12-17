@@ -14,8 +14,8 @@ from Themes import *
 '''Hello, anyone reading this! Don't mind the disgusting code in some places; I'm not that good at coding, so don't expect it to work perfectly
 and/or look pretty! Anyways, hopefully you'll find some enjoyment messing around with this corrupter. Have fun!'''
 
-buildNumber = "22"
-versionNumber = "v1.22"
+buildNumber = "23"
+versionNumber = "v1.22.1"
 goodIcon = "Assets/favi.ico" if (os.name == 'nt') else "@Assets/favi.xbm"
 
 #os.getcwd() to get working directory
